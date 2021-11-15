@@ -1,0 +1,129 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  & .container {
+    width: 50%;
+    padding: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: "Josefin Sans";
+    text-align: center;
+    color: $globalTextColor;
+  }
+
+  &__logo {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 22px;
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 650px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-input {
+    width: 100%;
+    border: 1px solid $globalTextColor;
+    height: 100%;
+    outline: none;
+    font-family: "Josefin Sans";
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+
+    @include media("<768px") {
+      font-size: 12px;
+    }
+
+    &::placeholder {
+      width: 80%;
+
+      @include media("<768px") {
+        width: 60%;
+      }
+    }
+  }
+
+  &__search-input:focus {
+    color: #00b4cc;
+  }
+
+  &__search-button {
+    width: 20%;
+    min-width: 100px;
+    height: 56px;
+    border: none;
+    outline: none;
+    background: #5474fd;
+    font-size: 20px;
+    text-align: center;
+    color: $globalTextColor;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+
+    & p {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-transform: uppercase;
+      font-family: "Aleo";
+      font-size: 14px;
+      padding-left: 10%;
+
+      & .icon-search {
+        font-size: 27px;
+      }
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    top: 70%;
+    color: $globalTextColor;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+    & .icon-line-angle-down {
+      font-size: 10px;
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.footer {
+  height: 25vh;
+  width: 100%;
+  background: #232323;
+  position: relative;
+
+  @include media("<1200px") {
+    height: 15vh;
+  }
+
+  & .container {
+    padding-top: 45px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans";
+    text-align: left;
+    color: $globalTextColor;
+
+    @include media("<1200px") {
+      padding-top: 0;
+    }
+  }
+
+  &__logo {
+    padding-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 5px;
+
+    @include media("<1200px") {
+      padding-top: 30px;
+    }
+  }
+
+  &__slogan h2 {
+    padding-top: 10px;
+    font-family: "Josefin Sans";
+    font-size: $baseFontSize;
+    letter-spacing: 1px;
+  }
+
+  &__list {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 20px 14px 0;
+    font-family: "Aleo";
+    text-transform: uppercase;
+
+    @include media("<1200px") {
+      padding: 10px 14px 0;
+    }
+
+    & a {
+      color: $globalTextColor;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover a {
+      color: #5474fd;
+    }
+  }
+}

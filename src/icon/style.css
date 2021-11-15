@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'fawesom';
+  src:  url('fonts/fawesom.eot?qmze5t');
+  src:  url('fonts/fawesom.eot?qmze5t#iefix') format('embedded-opentype'),
+    url('fonts/fawesom.ttf?qmze5t') format('truetype'),
+    url('fonts/fawesom.woff?qmze5t') format('woff'),
+    url('fonts/fawesom.svg?qmze5t#fawesom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fawesom' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-left:before {
+  content: "\e900";
+}
+.icon-check:before {
+  content: "\e901";
+}
+.icon-facebook-f-brands:before {
+  content: "\e997";
+}
+.icon-like2:before {
+  content: "\e902";
+}
+.icon-line-angle-down:before {
+  content: "\e903";
+}
+.icon-linkedin-in-brands:before {
+  content: "\e998";
+}
+.icon-pinterest-brands:before {
+  content: "\e999";
+}
+.icon-quote-left-solid:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-twitter-brands:before {
+  content: "\e995";
+}
+.icon-youtube-brands:before {
+  content: "\e996";
+}

@@ -1,0 +1,82 @@
+.how-works {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background: #333;
+
+  & .container {
+    width: 56%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(32, 31, 31);
+    position: relative;
+  }
+
+  &__dots {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: -20%;
+  }
+
+  &__steps {
+    width: 130%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    text-align: center;
+    font-family: "Aleo";
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 400;
+
+    @include media("<1200px") {
+      font-size: 20px;
+    }
+  }
+
+  &__icon-holder {
+    font-size: 60px;
+
+    @include media("<1200px") {
+      font-size: 50px;
+    }
+
+    & .icon-search {
+      background: #333;
+      color: #5474fd;
+    }
+
+    & .icon-check {
+      background: #333;
+      color: #ff6363;
+    }
+
+    & .icon-like2 {
+      background: #333;
+      color: #00a2ff;
+    }
+  }
+}
